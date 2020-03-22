@@ -1,4 +1,3 @@
-module.exports = function countCats(/* matrix */) {
-  throw 'Not implemented';
-  // remove line with error and write your code here
+module.exports = function countCats(backyard) {
+  let i=0;backyard.map((s) => s.map((element) => { i+= element === '^^' ?1:0 }));return i;
 };
